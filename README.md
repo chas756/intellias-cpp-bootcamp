@@ -27,4 +27,4 @@ There are 3 solutions:
     - File customization
     - verbose mode
     - Makefile
-    - local Git repository
+    - Git repository
