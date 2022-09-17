@@ -1,0 +1,15 @@
+Overview:
+        CSV Time report application. Generates monthly time report from input 
+        csv file of per date records.
+
+Usage: report [options]
+Options:
+    --help                  Display this help
+    -v                      Verbose mode. Dislpay report to console and to file
+    --verbose-only          Dispay output to console only
+    -o <file>               Custom output file. Default is "output.csv"
+    -i <file>               Custom input file. Default is "input.csv"
+    -d= <char delimeter>    Add custom delimeter. Default is ';'  
+                            Note space after "d=" is required
+
+For more information see README
