@@ -13,6 +13,7 @@ main_files = plain.cpp classes.cpp report.cpp
 clang_format_files= $(main_files) $(csv_class_list) $(csv_header_list) $(parser_class) $(parser_header)
 
 
+
 all: plain classes report
 
 plain: plain.cpp
@@ -29,6 +30,9 @@ report: report.cpp $(csv_header_list) $(csv_class_list) $(parser_class) $(parser
 format:
 	clang-format -i $(clang_format_files)
 
+git-add:
+	git add $(clang_format_files) Makefile help.txt input.csv README.md
+
 clean :
-	rm -fv *.ii *.o *.s classes report plain
+	rm -fv *.ii *.o *.s classes report plain *output.csv 
 	
